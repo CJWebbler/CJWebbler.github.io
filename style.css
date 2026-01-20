@@ -85,3 +85,34 @@ main {
 .back-link:hover {
   text-decoration: underline;
 }
+
+.card {
+  position: relative; /* allows overlay positioning */
+}
+
+/* Common banner style */
+.ribbon {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  width: 140px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #000;
+  padding: 6px 0;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+/* Variants */
+.ribbon.sold {
+  background-color: #d94141;
+  color: #fff;
+}
+
+.ribbon.pending {
+  background-color: #f0c24b;
+  color: #000;
+}
+
